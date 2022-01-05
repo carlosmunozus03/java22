@@ -8,6 +8,15 @@ public class Car {
     private int speed;
     private int price;
 
+//Constructor
+
+    public Car(String color, String brand, int speed, int price) {
+        this.color = color;
+        this.brand = brand;
+        this.speed = speed;
+        this.price = price;
+    }
+
     //Methods or actions
     void TurnOn() {
         System.out.println("The Car is Turned On");
