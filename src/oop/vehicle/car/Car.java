@@ -3,7 +3,7 @@ package oop.vehicle.car;
 public class Car {
 
     //attributes or characteristics
-    private String color;
+    private String color; //If we don't use 'this', it will use the global attributes
     private String brand;
     private int speed;
     private int price;
@@ -19,7 +19,12 @@ public class Car {
 
     //Methods or actions
     void TurnOn() {
-        System.out.println("The Car is Turned On");
+        System.out.println("The " + this.color + " " + this.brand + " is on and ready to go!");
+        //using
+        // this for
+        // reference
+        // the
+        // constructor
     }
 
     void Accelerate() {
