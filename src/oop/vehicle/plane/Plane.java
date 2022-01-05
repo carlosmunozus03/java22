@@ -5,10 +5,24 @@ public class Plane {
     private String brand;
     private String airline;
     private int engines; //Number of engine
+    private String model;
+
+    //Constructor
+
+
+    public Plane(String brand, String airline, String model, int engines) {
+        this.brand = brand;
+        this.airline = airline;
+        this.engines = engines;
+        this.model = model;
+    }
 
     //Methods
-    void TurnOn(String brand, String airline) {  // Using parameters
-        System.out.println("The Plane is Turned On");
+    void TurnOn() {  // Could use parameters without constructor
+//        System.out.println("The Plane is Turned On"); // Change the plane for this.brand
+        System.out.println("The " + this.brand + " " + this.model + " of " + this.airline + " has started its " + this.engines +
+                " engines and" +
+                " it ready to go!");
     }
 
     void Accelerate() {
