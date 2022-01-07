@@ -2,14 +2,26 @@ package oop.animals.dog;
 
 public class Dog {
     //Attributes
-    private double weight;
+    private String name;
     private String size;
     private String color;
     private String breed;
+    private double weight;
+
+    //Constructor
+
+
+    public Dog(String name, String size, String color, String breed, double weight) {
+        this.name = name;
+        this.size = size;
+        this.color = color;
+        this.breed = breed;
+        this.weight = weight;
+    }
 
     //Methods olfatear, ladrar, comer, caminar,saltar, dormir
     void Sniff() {
-        System.out.println("The Dog is sniffing something");
+        System.out.println(this.name + " is sniffing something");
     }
 
     void Brake() {

@@ -21,7 +21,7 @@ public class Bass {
 
     //Methods conectar, tocar, desconectar, guardad
     void PlugIn() {
-        System.out.println("The Bass is connect and ready to play");
+        System.out.println("The "+ this.brand+" is connect and ready to play");
     }
 
     void Play() {
