@@ -26,15 +26,17 @@ public class Plane {
     }
 
     void Accelerate() {
-        System.out.println("The Plane is Accelerating");
+        System.out.println("The " + this.brand + " " + this.model + " of " + this.airline + " is accelerating and " +
+                "increase the speed");
     }
 
     void Brake() {
-        System.out.println("The Plane is braking");
+        System.out.println("The " + this.brand + " " + this.model + " of " + this.airline + " is braking and reducing " +
+                "the speed");
     }
 
     void TurnOff() {
-        System.out.println("The Plane is Turned Off");
+        System.out.println("The " + this.brand + " " + this.model + " of " + this.airline + " is turned off");
     }
 
 }
