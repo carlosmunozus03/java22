@@ -25,7 +25,7 @@ public class Cat {
     }
 
     void Walk() {
-        System.out.println("The Cat is already walking");
+        System.out.println("The cat " + this.name + " is already walking");
     }
 
     void Jump() {
@@ -37,6 +37,6 @@ public class Cat {
     }
 
     void Sleep() {
-        System.out.println("Zzz... The Cat is already sleeping");
+        System.out.println("Zzz... The cat " + this.name + " is already sleeping");
     }
 }
