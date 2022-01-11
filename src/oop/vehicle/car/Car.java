@@ -8,7 +8,13 @@ public class Car {
     private int speed;
     private int price;
 
-//Constructor
+    //Boolean here!
+    //condition == false (turn off)
+    //condition == true (turn on)
+    boolean condition = false;
+
+
+    //Constructor
 
     public Car(String color, String brand, int speed, int price) {
         this.color = color;
@@ -17,26 +23,35 @@ public class Car {
         this.price = price;
     }
 
-    //Methods or actions
+    //Methods or actions; Added booleans
     void TurnOn() {
-        System.out.println("The " + this.color + " " + this.brand + " is on and ready to go!");
-        //using
-        // this for
-        // reference
-        // the
-        // constructor
+        if (condition == false) {
+            System.out.println(this.brand + " has started the engine and is ready to go...");
+            condition = true;
+        } else {
+            System.out.println(this.brand + " is already on!!!");
+        }
     }
 
     void Accelerate() {
-        System.out.println("The Car is Accelerating");
+        if (condition == true) {
+            System.out.println(this.brand + " is accelerating at a speed of " + this.speed + " mph");
+        } else {
+            System.out.println(this.brand + " can,t accelerating because the engine is off...");
+        }
     }
 
     void Brake() {
-        System.out.println("The Car is braking");
+        System.out.println(this.brand + " is braking");
     }
 
     void TurnOff() {
-        System.out.println("The Car is Turned Off");
+        if (condition == true) {
+            System.out.println(this.brand + " has turned off its engine");
+            condition = false;
+        } else {
+            System.out.println(this.brand + " is already off!!!");
+        }
     }
 
 }
@@ -45,3 +60,5 @@ public class Car {
 //Crear instancia de objeto: TipoClase + nombreObjeto = new ConstructorClase();
 
 //Acceder, modificar o ejecutar: NombreObjeto.Atributo o metodo
+
+//Agregar boolean estado == true /false para encendido y apagado
