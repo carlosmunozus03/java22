@@ -4,9 +4,14 @@ public class PlaneMain {
     public static void main(String[] args) {
         Plane american = new Plane("Boeing", "American Airline", "767-300", 2);
         american.TurnOn();
+        american.TurnOn();
+        american.TurnOff();
+        american.TurnOn();
         american.Accelerate();
         american.Brake();
         american.TurnOff();
+        american.TurnOff();
+
 
         Plane delta = new Plane("Airbus", "Delta Airline", "320-200", 2);
         delta.TurnOn();
