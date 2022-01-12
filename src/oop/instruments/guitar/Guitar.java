@@ -8,6 +8,11 @@ public class Guitar {
     private String coils; //Active or passive
     private int strings; //Number of strings
 
+
+    //Boolean Here
+    //amplifier = false (turn off)
+    //amplifier = true (turn on)
+    boolean amplifier = false;
     //Constructor
 
 
@@ -20,8 +25,21 @@ public class Guitar {
     }
 
     //Methods conectar, tocar, desconectar, guardad
+    void TurnOn() {
+        if (amplifier == false) {
+            System.out.println("Amplifier is ready to use");
+            amplifier = true;
+        } else {
+            System.out.println("Please turn on the amplifier before play");
+        }
+    }
+
     void PlugIn() {
-        System.out.println("The " + this.brand + " is connect and ready to play");
+        if (amplifier == true) {
+            System.out.println("The " + this.brand + " is connect and ready to play");
+        } else {
+            System.out.println("Please check if you amplifier is on");
+        }
     }
 
     void Play() {
@@ -29,7 +47,20 @@ public class Guitar {
     }
 
     void Unplug() {
-        System.out.println("Guitar disconnected");
+        if (amplifier == false) {
+            System.out.println("Guitar disconnected");
+        } else {
+            System.out.println("Please, turn off you amplifier before unplug you instrument");
+        }
+    }
+
+    void TurnOff() {
+        if (amplifier == true) {
+            System.out.println("Amplifier is already tuned off");
+            amplifier = false;
+        } else {
+            System.out.println("Turn off the amplifier before unplug the instrument");
+        }
     }
 
     void PutAway() {

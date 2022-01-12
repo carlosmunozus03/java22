@@ -8,6 +8,11 @@ public class Bass {
     private String coils; //Active or passive
     private int strings; //Number of strings
 
+    //boolean Here
+    //boolean = true (amplifier on)
+    //boolean = false (amplifier off)
+    boolean amplifier = false;
+
     //Constructor
 
 
@@ -20,19 +25,32 @@ public class Bass {
     }
 
     //Methods conectar, tocar, desconectar, guardad
+    void TurnOn() {
+        if (amplifier == false) {
+            System.out.println("The amplifier is on and ready to rock!!!");
+            amplifier = true;
+        } else {
+            System.out.println("The amplifier is already on!!!");
+        }
+    }
+
     void PlugIn() {
-        System.out.println("The "+ this.brand+" is connect and ready to play");
+        if (amplifier == true) {
+            System.out.println("The bass " + this.brand + " is connect and ready to play");
+        } else {
+            System.out.println("Please, turn on the amplifier before play");
+        }
     }
 
     void Play() {
-        System.out.println("The Bass is already playing and sounds so good!");
+        System.out.println("The bass " + this.brand + " is already playing and sounds so good!");
     }
 
     void Unplug() {
-        System.out.println("Bass disconnected");
+        System.out.println(this.brand + " is disconnected");
     }
 
     void PutAway() {
-        System.out.println("The Bass was kept in the case");
+        System.out.println("The bass " + this.brand + " was kept in the case");
     }
 }

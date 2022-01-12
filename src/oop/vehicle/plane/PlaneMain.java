@@ -21,6 +21,9 @@ public class PlaneMain {
 
         Plane lufthansa = new Plane("Boeing", "Lufthansa", "737-800W", 2);
         lufthansa.TurnOn();
+        lufthansa.Accelerate();
+        lufthansa.Brake();
+        lufthansa.TurnOff();
 
 
     }
