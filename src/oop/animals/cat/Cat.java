@@ -8,6 +8,11 @@ public class Cat {
     private int age;
     private double weight;
 
+    //Boolean Here
+    //wakeup == true (wakeup)
+    //wakeup == false (sleep)
+    boolean wakeup = false;
+
     //Constructor
 
 
@@ -15,13 +20,26 @@ public class Cat {
         this.name = name;
         this.color = color;
         this.breed = breed;
-        age = age;
+        this.age = age;
         this.weight = weight;
     }
 
-    //Methods maullar, caminar, saltar, comer, dormir
+    //Methods despertar maullar, caminar, saltar, comer, dormir
+    void Wakeup() {
+        if (wakeup == false) {
+            System.out.println(this.name + " Wakeup");
+            wakeup = true;
+        } else {
+            System.out.println(this.name + " is already sleeping");
+        }
+    }
+
     void Meow() {
-        System.out.println("Meow Meow " + this.name + " is meowing");
+        if (wakeup == true) {
+            System.out.println("Meow Meow " + this.name + " is meowing");
+        } else {
+            System.out.println(this.name + " can't meowing because is sleeping");
+        }
     }
 
     void Walk() {
@@ -37,6 +55,11 @@ public class Cat {
     }
 
     void Sleep() {
-        System.out.println("Zzz... The cat " + this.name + " is already sleeping");
+        if (wakeup == true) {
+            System.out.println("The cat " + this.name + " going to sleep");
+            wakeup = false;
+        } else {
+            System.out.println("Zzz... The cat " + this.name + " is already sleeping");
+        }
     }
 }
