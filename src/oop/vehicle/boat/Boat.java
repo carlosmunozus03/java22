@@ -38,4 +38,29 @@ public class Boat {
             System.out.println(this.brand + " turned off all " + this.engine + " engines");
         }
     }
+
+    //setter and getter
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getEngine() {
+        return engine;
+    }
+
+    public void setEngine(int engine) {
+        this.engine = engine;
+    }
 }

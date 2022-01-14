@@ -23,6 +23,7 @@ public class Car {
         this.price = price;
     }
 
+
     //Methods or actions; Added booleans
     void TurnOn() {
         if (condition == false) {
@@ -54,6 +55,52 @@ public class Car {
         }
     }
 
+    void Color() {
+        System.out.println(this.brand + " is " + this.color);
+    }
+
+    //setter and getters here
+
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public boolean isCondition() {
+        return condition;
+    }
+
+    public void setCondition(boolean condition) {
+        this.condition = condition;
+    }
 }
 //Creacion de objeto: TipoClase + nombreObjeto
 
@@ -62,3 +109,7 @@ public class Car {
 //Acceder, modificar o ejecutar: NombreObjeto.Atributo o metodo
 
 //Agregar boolean estado == true /false para encendido y apagado
+
+//Agregar setter and getters al final para manipular informacion de atributos privados (Encapsulacion)
+
+//4 Pilares de oop Encapsulacion-Abtraccion-polimorfismo-herencia

@@ -53,4 +53,54 @@ public class Bass {
     void PutAway() {
         System.out.println("The bass " + this.brand + " was kept in the case");
     }
+
+    //setter and getter
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getCoils() {
+        return coils;
+    }
+
+    public void setCoils(String coils) {
+        this.coils = coils;
+    }
+
+    public int getStrings() {
+        return strings;
+    }
+
+    public void setStrings(int strings) {
+        this.strings = strings;
+    }
+
+    public boolean isAmplifier() {
+        return amplifier;
+    }
+
+    public void setAmplifier(boolean amplifier) {
+        this.amplifier = amplifier;
+    }
 }

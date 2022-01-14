@@ -25,6 +25,12 @@ public class PlaneMain {
         lufthansa.Brake();
         lufthansa.TurnOff();
 
-
+        Plane latam = new Plane("Boeing", "LATAM", "737-MAX", 2);
+        latam.TurnOn(); //test
+        latam.TurnOff();
+        latam.setBrand("Airbus"); // change brand
+        latam.setModel("321-NEO"); // change model
+        latam.TurnOn(); // check test
+        latam.TurnOff();
     }
 }
