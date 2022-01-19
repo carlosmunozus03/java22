@@ -32,5 +32,8 @@ public class PlaneMain {
         latam.setModel("321-NEO"); // change model
         latam.TurnOn(); // check test
         latam.TurnOff();
+
+        Cargo fedex = new Cargo("McDouglas", "Fedex", "DC-10", 3);
+        fedex.TurnOn();
     }
 }
