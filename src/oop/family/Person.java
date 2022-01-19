@@ -10,11 +10,10 @@ public class Person {
     //Constructor
 
 
-    public Person(String name, String email, int age, boolean sleep) {
+    public Person(String name, String email, int age) {
         this.name = name;
         this.email = email;
         this.age = age;
-        this.sleep = sleep;
     }
 
     //Methods
