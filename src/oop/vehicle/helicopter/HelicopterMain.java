@@ -5,9 +5,17 @@ public class HelicopterMain {
         Helicopter apache = new Helicopter("Apache", "USA", "Attacker", 18000, 2);
         apache.StartEngine();
         apache.StartEngine();
+        apache.TurnOff();
+        apache.TurnOff();
 
         Helicopter cobra = new Helicopter("Cobra", "USA", "Attacker", 15000, 1);
         cobra.StartEngine();
         cobra.StartEngine();
+        cobra.Accelerate();
+        cobra.Accelerate();
+        cobra.Decelerate();
+        cobra.Decelerate();
+        cobra.TurnOff();
+        cobra.TurnOff();
     }
 }
