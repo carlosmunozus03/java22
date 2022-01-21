@@ -40,15 +40,45 @@ public class Helicopter {
                         "running");
             }
         }
-
     }
 
     public void Accelerate() {
+        if (numberOfEngines == 1) {
+            System.out.println(this.model + " is accelerating its engine and gaining altitude");
+        } else {
+            System.out.println(this.model + " is accelerating its " + this.numberOfEngines + " engines and " +
+                    "gaining altitude");
+        }
+        System.out.println(this.model + " is already accelerating and flying at cruising speed ");
+    }
 
+
+    public void Decelerate() {
+        if (numberOfEngines == 1) {
+            System.out.println(this.model + " is decelerating its engine and slowing down to land");
+        } else {
+            System.out.println(this.model + " is decelerating its " + this.numberOfEngines + " engines and slowing " +
+                    "down to land");
+        }
+
+        System.out.println(this.model + " is already slowing down and preparing to land");
     }
 
     public void TurnOff() {
-
+        if (off == false) {
+            if (numberOfEngines == 1) {
+                System.out.println(this.model + " has already switched off its engine");
+            } else {
+                System.out.println(this.model + " has already switched off its " + this.numberOfEngines + " engines");
+            }
+            off = true;
+        } else {
+            if (numberOfEngines == 1) {
+                System.out.println(this.model + " is turning off its engine");
+            } else {
+                System.out.println(this.model + " is turning off its " + this.numberOfEngines + " engines");
+            }
+        }
     }
 
     //Setter and Getter
