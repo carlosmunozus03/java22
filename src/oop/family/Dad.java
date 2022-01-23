@@ -1,9 +1,8 @@
 package oop.family;
 
-public class Dad extends Person {
-    //Constructor
-
-    public Dad(String name, String email, int age) {
-        super(name, email, age);
-    }
+public interface Dad {
+    void Hello();
+    void Goodbye();
 }
+//Interface, nunca en privada
+//Obliga a sobreescribir los metodos que se especifican en la clase donde se implementa
