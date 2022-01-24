@@ -26,3 +26,4 @@ public abstract class Mom {
 }
 //Clase abstracta funciona igual que herencia pero obliga a sobreescribir los metodos especificados
 //Puede tener atributos privados, metodos abstractos y metodos "normales"
+//nNo puede implementar interfaces
