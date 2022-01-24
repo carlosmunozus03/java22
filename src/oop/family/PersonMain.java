@@ -13,21 +13,5 @@ public class PersonMain {
 
         Daughter sofia = new Daughter("Daughter", "Sofia");
         sofia.GoodAfternoon();
-
-        //Abstract Methods are mandatory ???
-        Mom mariana = new Mom("Mariana") {
-
-            @Override
-            public void GoodMorning() {
-                System.out.println("Mom said good morning");
-            }
-
-            @Override
-            public void GoodAfternoon() {
-                System.out.println("Mom said good afternoon");
-            }
-        };
-        mariana.Walk();
-        mariana.GoodMorning();
     }
 }
