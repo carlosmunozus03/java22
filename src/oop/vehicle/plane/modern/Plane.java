@@ -1,4 +1,4 @@
-package oop.vehicle.plane;
+package oop.vehicle.plane.modern;
 
 public class Plane {
     //Attributes
