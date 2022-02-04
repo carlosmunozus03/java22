@@ -5,8 +5,10 @@ public class PlanesMain {
         Planes mustang = new Planes("United States", "P-51 Mustang", "Fighter", 1);
         mustang.StartEngine();
         mustang.StartEngine();
+        mustang.Accelerate(); // Added just for Check if its works
         mustang.TurnOffEngine();
         mustang.TurnOffEngine();
+
 
         Planes bf109 = new Planes("Germany", "Bf-109 Messerschmitt", "Fighter", 1);
         bf109.StartEngine();
