@@ -47,15 +47,31 @@ public class Planes {
     public void Accelerate() {
         if (powerUp == true) {
             if (engineNumber == 1) {
-                System.out.println(this.model + " is accelerating its engine, increasing its speed and starting to gain height.");
+                System.out.println(this.model + " is accelerating its engine, increasing its speed and starting to gain height");
             } else {
-                System.out.println(this.model + " is accelerating its " + this.engineNumber + " engines, increasing its speed and starting to gain height.");
+                System.out.println(this.model + " is accelerating its " + this.engineNumber + " engines, increasing its speed and starting to gain height");
             }
         } else {
             if (engineNumber == 1) {
                 System.out.println("Please turn on the engine before accelerate the " + this.role + " aircraft");
             } else {
                 System.out.println("Captain... please turn on its " + this.engineNumber + " engines before accelerate the " + this.role + " aircraft");
+            }
+        }
+    }
+
+    public void SlowDown() {
+        if (powerUp == true) {
+            if (engineNumber == 1) {
+                System.out.println(this.model + " is throttling its engine, slowing down and losing altitude to land");
+            } else {
+                System.out.println(this.model + " is throttling its " + this.engineNumber + " engines, slowing down and losing altitude to land");
+            }
+        } else {
+            if (engineNumber == 1) {
+                System.out.println("The aircraft must be accelerating in order to decelerate its engine");
+            } else {
+                System.out.println("The aircraft must be accelerating in order to decelerate its " + this.engineNumber + " engines");
             }
         }
     }

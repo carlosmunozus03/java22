@@ -6,6 +6,7 @@ public class PlanesMain {
         mustang.StartEngine();
         mustang.StartEngine();
         mustang.Accelerate(); // Added just for Check if its works
+        mustang.SlowDown();
         mustang.TurnOffEngine();
         mustang.TurnOffEngine();
 
