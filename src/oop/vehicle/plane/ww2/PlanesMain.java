@@ -14,5 +14,11 @@ public class PlanesMain {
         Planes bf109 = new Planes("Germany", "Bf-109 Messerschmitt", "Fighter", 1);
         bf109.StartEngine();
         bf109.StartEngine();
+
+        Bombers b25 = new Bombers("USA", "B-25C Mitchell", "Tactical Bomber", 2, "B-25C Mitchell", 8);
+        b25.StartEngine();
+        b25.Accelerate();
+        b25.OpenBombsGate();
+        b25.CloseBombsGate();
     }
 }
